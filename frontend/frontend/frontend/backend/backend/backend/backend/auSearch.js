@@ -1,123 +1,78 @@
-const { crawlAU } = require("./auCrawler");
+const {
+    crawlAU
+} = require("./auCrawler");
 
-const departments = require("./data/departments.json");
-const staff = require("./data/staff.json");
-const programmes = require("./data/programmes.json");
-const notices = require("./data/notices.json");
-
-
-function words(text) {
-
-    return String(text)
+function normalize(text) {
+    return String(text || "")
         .toLowerCase()
-        .split(/[^a-z0-9]+/)
-        .filter(word => word.length > 2);
-
+        .replace(/\s+/g, " ")
+        .trim();
 }
 
-
-function scoreText(text, keywords) {
-
-    const lower = String(text)
-        .toLowerCase();
+function scoreText(text, query) {
+    const source = normalize(text);
+    const words = normalize(query)
+        .split(" ")
+        .filter(Boolean);
 
     let score = 0;
 
-    for (const word of keywords) {
-
-        if (lower.includes(word)) {
+    for (const word of words) {
+        if (source.includes(word)) {
             score++;
         }
-
     }
 
     return score;
-
 }
 
+async function searchAU(query) {
+    const data = await crawlAU();
 
-async function searchAU(question) {
-
-    const keywords = words(question);
-
-
-    const local = [
-        ...departments,
-        ...staff,
-        ...programmes,
-        ...notices
-    ];
-
-
-    const localResults = local
-        .map(item => ({
-            item: item,
-            score: scoreText(
-                JSON.stringify(item),
-                keywords
-            )
-        }))
-        .filter(item => item.score > 0)
-        .sort(
-            (a, b) => b.score - a.score
-        )
-        .slice(0, 10);
-
-
-    let live = {
-        verified: false,
-        homepage: "",
-        pages: []
-    };
-
-
-    try {
-
-        live = await crawlAU();
-
-    } catch (error) {
-
-        console.error(
-            "Live search error:",
-            error.message
-        );
-
+    if (!data.verified) {
+        return {
+            success: false,
+            message:
+                "AU public information could not be fetched right now.",
+            results: []
+        };
     }
 
+    const results = [];
 
-    const liveResults = (live.pages || [])
-        .map(page => ({
-            ...page,
-            score: scoreText(
-                page.text,
-                keywords
-            )
-        }))
-        .filter(
-            page => page.score > 0
-        )
-        .sort(
-            (a, b) => b.score - a.score
-        )
-        .slice(0, 8);
+    for (const page of data.pages) {
+        const score = scoreText(
+            page.text,
+            query
+        );
 
+        if (score > 0) {
+            results.push({
+                score,
+                url: page.url,
+                text: page.text
+            });
+        }
+    }
+
+    results.sort(
+        (a, b) => b.score - a.score
+    );
 
     return {
-
-        verified: live.verified,
-
-        local: localResults.map(
-            result => result.item
-        ),
-
-        live: liveResults,
-
-        homepage: live.homepage || ""
-
+        success: true,
+        query,
+        results: results
+            .slice(0, 5)
+            .map(item => ({
+                url: item.url,
+                text: item.text.slice(
+                    0,
+                    5000
+                )
+            }))
     };
-
 }
-
 
 module.exports = {
     searchAU
