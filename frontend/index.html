@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AU Help AI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<strong>AU Help AI</strong>
+<span>● Online</span>
+</header>
+
+<main>
+
+<section class="hero">
+
+<div class="badge">
+ANNAMALAI UNIVERSITY ASSISTANT
+</div>
+
+<h1>
+Ask AU.<br>
+<span>Get answers.</span>
+</h1>
+
+<p>
+Ask questions about departments, staff, courses,
+examinations, notices and university information.
+</p>
+
+<form id="aiSearchForm">
+
+<input
+id="aiInput"
+autocomplete="off"
+placeholder="Ask anything about AU..."
+>
+
+<button type="submit">
+Ask AI →
+</button>
+
+</form>
+
+<div class="chips">
+
+<button data-query="Show all AU departments">
+Departments
+</button>
+
+<button data-query="Show staff and HOD details">
+Staff & HOD
+</button>
+
+<button data-query="Check AU examination information">
+Exams
+</button>
+
+<button data-query="Show latest AU notices">
+Notices
+</button>
+
+<button data-query="Show AU placement information">
+Placements
+</button>
+
+</div>
+
+</section>
+
+
+<section class="workspace">
+
+<div class="response" id="aiResponse">
+
+<div class="responseHead">
+<b>AU Help AI</b>
+<small id="responseStatus">Ready</small>
+</div>
+
+<div id="responseText">
+Ask me a question to get started.
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+
+<footer>
+AU Help AI · Independent student project · Public information only
+</footer>
+
+<script src="app.js"></script>
+
+</body>
+</html>
