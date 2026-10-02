@@ -1,103 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AU Help AI</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07090d">
+
+  <title>AU Help AI</title>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-<strong>AU Help AI</strong>
-<span>● Online</span>
-</header>
+  <!-- NAVBAR -->
+  <nav class="nav">
+    <a class="brand" href="#">
+      <span class="brand-mark">AU</span>
+      <span>AU Help <b>AI</b></span>
+    </a>
 
-<main>
-
-<section class="hero">
-
-<div class="badge">
-ANNAMALAI UNIVERSITY ASSISTANT
-</div>
-
-<h1>
-Ask AU.<br>
-<span>Get answers.</span>
-</h1>
-
-<p>
-Ask questions about departments, staff, courses,
-examinations, notices and university information.
-</p>
-
-<form id="aiSearchForm">
-
-<input
-id="aiInput"
-autocomplete="off"
-placeholder="Ask anything about AU..."
->
-
-<button type="submit">
-Ask AI →
-</button>
-
-</form>
-
-<div class="chips">
-
-<button data-query="Show all AU departments">
-Departments
-</button>
-
-<button data-query="Show staff and HOD details">
-Staff & HOD
-</button>
-
-<button data-query="Check AU examination information">
-Exams
-</button>
-
-<button data-query="Show latest AU notices">
-Notices
-</button>
-
-<button data-query="Show AU placement information">
-Placements
-</button>
-
-</div>
-
-</section>
+    <div class="nav-actions">
+      <span class="nav-status">
+        <span class="live-dot"></span>
+        AI Assistant
+      </span>
+    </div>
+  </nav>
 
 
-<section class="workspace">
+  <main>
 
-<div class="response" id="aiResponse">
+    <!-- HERO -->
+    <section class="hero">
 
-<div class="responseHead">
-<b>AU Help AI</b>
-<small id="responseStatus">Ready</small>
-</div>
+      <div class="eyebrow">
+        <span class="live-dot"></span>
+        Annamalai University Assistant
+      </div>
 
-<div id="responseText">
-Ask me a question to get started.
-</div>
+      <h1>
+        Ask AU.<br>
+        <span>Get answers.</span>
+      </h1>
 
-</div>
+      <p class="hero-copy">
+        Ask about departments, staff, HODs, courses,
+        examinations, notices, placements and other
+        publicly available university information.
+      </p>
 
-</section>
 
-</main>
+      <!-- SEARCH -->
+      <form class="search-box" id="aiSearchForm">
+
+        <span class="search-icon">⌕</span>
+
+        <input
+          id="aiInput"
+          type="text"
+          autocomplete="off"
+          placeholder="Ask anything about Annamalai University..."
+          required
+        >
+
+        <button
+          class="ask-btn"
+          type="submit"
+        >
+          Ask AI
+          <span>→</span>
+        </button>
+
+      </form>
 
 
-<footer>
-AU Help AI · Independent student project · Public information only
-</footer>
+      <!-- QUICK QUESTIONS -->
+      <div class="chips">
 
-<script src="app.js"></script>
+        <button
+          type="button"
+          data-query="Show AU departments">
+          Departments
+        </button>
+
+        <button
+          type="button"
+          data-query="Show staff and HOD details">
+          Staff &amp; HOD
+        </button>
+
+        <button
+          type="button"
+          data-query="Check AU examination results information">
+          Results
+        </button>
+
+        <button
+          type="button"
+          data-query="Show latest AU notices">
+          Notices
+        </button>
+
+        <button
+          type="button"
+          data-query="Show AU placement information">
+          Placements
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- EXPLORE -->
+    <section class="workspace">
+
+      <div class="section-heading">
+
+        <div>
+          <span class="section-label">EXPLORE</span>
+
+          <h2>
+            University at a glance
+          </h2>
+        </div>
+
+        <span class="verified">
+          Public information
+        </span>
+
+      </div>
+
+
+      <!-- INFORMATION CARDS -->
+      <div class="cards">
+
+        <button
+          class="info-card"
+          type="button"
+          data-query="Show AU departments">
+
+          <span class="card-icon">⌘</span>
+
+          <span>
+            <b>Departments</b>
+            <small>Faculties &amp; programmes</small>
+          </span>
+
+          <i>↗</i>
+
+        </button>
+
+
+        <button
+          class="info-card"
+          type="button"
+          data-query="Show staff and HOD details">
+
+          <span class="card-icon">◎</span>
+
+          <span>
+            <b>Staff &amp; HOD</b>
+            <small>Public faculty information</small>
+          </span>
+
+          <i>↗</i>
+
+        </button>
+
+
+        <button
+          class="info-card"
+          type="button"
+          data-query="Check AU examination results information">
+
+          <span class="card-icon">✓</span>
+
+          <span>
+            <b>Examinations</b>
+            <small>Results &amp; examination information</small>
+          </span>
+
+          <i>↗</i>
+
+        </button>
+
+
+        <button
+          class="info-card"
+          type="button"
+          data-query="Show latest AU notices">
+
+          <span class="card-icon">!</span>
+
+          <span>
+            <b>Notices</b>
+            <small>University notifications</small>
+          </span>
+
+          <i>↗</i>
+
+        </button>
+
+
+        <button
+          class="info-card"
+          type="button"
+          data-query="Show AU placement information">
+
+          <span class="card-icon">↗</span>
+
+          <span>
+            <b>Placements</b>
+            <small>Published placement information</small>
+          </span>
+
+          <i>↗</i>
+
+        </button>
+
+
+        <button
+          class="info-card"
+          type="button"
+          data-query="Find publicly available student information">
+
+          <span class="card-icon">#</span>
+
+          <span>
+            <b>Student Lookup</b>
+            <small>Public information only</small>
+          </span>
+
+          <i>↗</i>
+
+        </button>
+
+      </div>
+
+
+      <!-- AI RESPONSE -->
+      <section
+        class="response-card"
+        id="aiResponse">
+
+        <div class="ai-avatar">
+          AU
+        </div>
+
+        <div class="response-header">
+
+          <div>
+            <b>AU Help AI</b>
+
+            <small id="responseStatus">
+              Ready to help
+            </small>
+          </div>
+
+          <span class="status-pill">
+            <span class="live-dot"></span>
+            Online
+          </span>
+
+        </div>
+
+
+        <div
+          class="response-body"
+          id="responseText">
+
+          Ask me a question to get started.
+
+        </div>
+
+
+        <div
+          class="response-actions"
+          id="responseActions">
+        </div>
+
+      </section>
+
+
+      <!-- INFORMATION NOTICE -->
+      <section class="source-strip">
+
+        <div>
+
+          <span>✓</span>
+
+          <b>
+            AU public information
+          </b>
+
+          <small>
+            AU Help AI uses publicly available university
+            information to answer your questions.
+          </small>
+
+        </div>
+
+      </section>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <span>
+      AU Help AI · Independent student project
+    </span>
+
+    <span>
+      Public information only
+    </span>
+
+  </footer>
+
+
+  <script src="app.js"></script>
 
 </body>
 </html>
