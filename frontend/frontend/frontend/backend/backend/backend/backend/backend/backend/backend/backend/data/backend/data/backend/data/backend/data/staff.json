@@ -1,0 +1,219 @@
+[
+  {
+    "type": "staff",
+    "name": "Dr. M. Kalaiselvi Geetha",
+    "designation": "Professor & Head",
+    "department": "Computer Science and Engineering",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "staff",
+    "name": "Dr. P. Aruna",
+    "designation": "Professor",
+    "department": "Computer Science and Engineering",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "staff",
+    "name": "Dr. R. Bhavani",
+    "designation": "Professor",
+    "department": "Computer Science and Engineering",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "staff",
+    "name": "Dr. T. S. Subashini",
+    "designation": "Professor",
+    "department": "Computer Science and Engineering",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "staff",
+    "name": "Dr. A. Suhasini",
+    "designation": "Professor",
+    "department": "Computer Science and Engineering",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "staff",
+    "name": "Dr. An. Sigappi",
+    "designation": "Professor",
+    "department": "Computer Science and Engineering",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "staff",
+    "name": "Dr. A. Geetha",
+    "designation": "Professor",
+    "department": "Computer Science and Engineering",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "staff",
+    "name": "Dr. P. Dhanalakshmi",
+    "designation": "Professor",
+    "department": "Computer Science and Engineering",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "staff",
+    "name": "Dr. R. Priya",
+    "designation": "Professor",
+    "department": "Computer Science and Engineering",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "staff",
+    "name": "Dr. S. Pasupathy",
+    "designation": "Associate Professor",
+    "department": "Computer Science and Engineering",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "staff",
+    "name": "Dr. M. Balasubramanian",
+    "designation": "Associate Professor",
+    "department": "Computer Science and Engineering",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "staff",
+    "name": "Dr. R. Ragupathy",
+    "designation": "Professor",
+    "department": "Computer Science and Engineering",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "staff",
+    "name": "Dr. R. Madan Mohan",
+    "designation": "Associate Professor",
+    "department": "Computer Science and Engineering",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "staff",
+    "name": "Dr. S. G. Santhi",
+    "designation": "Associate Professor",
+    "department": "Computer Science and Engineering",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "staff",
+    "name": "Dr. K. Selvakumar",
+    "designation": "Professor",
+    "department": "Information Technology",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "staff",
+    "name": "Dr. S. Jothilakshmi",
+    "designation": "Professor & Head i/c",
+    "department": "Information Technology",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "staff",
+    "name": "Dr. J. Sasikala",
+    "designation": "Professor",
+    "department": "Information Technology",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "staff",
+    "name": "Dr. K. Jagan Mohan",
+    "designation": "Associate Professor",
+    "department": "Information Technology",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "staff",
+    "name": "Dr. R. Suban",
+    "designation": "Associate Professor",
+    "department": "Information Technology",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "staff",
+    "name": "Dr. V. Tamizhazhagan",
+    "designation": "Assistant Professor",
+    "department": "Information Technology",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "staff",
+    "name": "Dr. R. Padmaraj",
+    "designation": "Assistant Professor",
+    "department": "Information Technology",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "staff",
+    "name": "Dr. D. Suresh",
+    "designation": "Assistant Professor & Dy. Nodal Officer",
+    "department": "Information Technology",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "staff",
+    "name": "Dr. M. Arasakumar",
+    "designation": "Assistant Professor",
+    "department": "Information Technology",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "staff",
+    "name": "Dr. K. Raja",
+    "designation": "Assistant Professor & Deputy Controller of Examinations",
+    "department": "Information Technology",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "staff",
+    "name": "Dr. K. Santhosh Kumar",
+    "designation": "Assistant Professor",
+    "department": "Information Technology",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "staff",
+    "name": "Dr. G. Pattabirani",
+    "designation": "Assistant Professor",
+    "department": "Information Technology",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "staff",
+    "name": "Dr. J. Manimaran",
+    "designation": "Assistant Professor",
+    "department": "Information Technology",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "staff",
+    "name": "Dr. R. Balamurugan",
+    "designation": "Assistant Professor",
+    "department": "Information Technology",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "staff",
+    "name": "Dr. S. Tamilselvan",
+    "designation": "Assistant Professor",
+    "department": "Information Technology",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "staff",
+    "name": "Dr. R. Visalakshi",
+    "designation": "Assistant Professor",
+    "department": "Information Technology",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "staff",
+    "name": "Dr. S. Arulselvi",
+    "designation": "Professor & Director - CDOE",
+    "department": "Electronics and Instrumentation Engineering",
+    "faculty": "Faculty of Engineering and Technology"
+  }
+    ]
