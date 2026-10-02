@@ -1,0 +1,268 @@
+[
+  {
+    "type": "programme",
+    "name": "B.E. Computer Science and Engineering",
+    "level": "UG",
+    "department": "Computer Science and Engineering",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "programme",
+    "name": "B.E. Computer Science and Engineering (Artificial Intelligence and Machine Learning)",
+    "level": "UG",
+    "department": "Computer Science and Engineering",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "programme",
+    "name": "B.E. Computer Science (Data Science)",
+    "level": "UG",
+    "department": "Computer Science and Engineering",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "programme",
+    "name": "B.E. Information Technology",
+    "level": "UG",
+    "department": "Information Technology",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "programme",
+    "name": "B.E. Electronics and Communication Engineering",
+    "level": "UG",
+    "department": "Electronics and Communication Engineering",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "programme",
+    "name": "B.E. Electronics and Instrumentation Engineering",
+    "level": "UG",
+    "department": "Electronics and Instrumentation Engineering",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "programme",
+    "name": "B.E. Electrical and Electronics Engineering",
+    "level": "UG",
+    "department": "Electrical Engineering",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "programme",
+    "name": "B.E. Mechanical Engineering",
+    "level": "UG",
+    "department": "Mechanical Engineering",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "programme",
+    "name": "B.E. Mechanical Engineering (Manufacturing)",
+    "level": "UG",
+    "department": "Manufacturing Engineering",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "programme",
+    "name": "B.E. Civil Engineering",
+    "level": "UG",
+    "department": "Civil Engineering",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "programme",
+    "name": "B.E. Civil and Structural Engineering",
+    "level": "UG",
+    "department": "Civil and Structural Engineering",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "programme",
+    "name": "B.E. Chemical Engineering",
+    "level": "UG",
+    "department": "Chemical Engineering",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "programme",
+    "name": "B.Sc. Computer Science",
+    "level": "UG",
+    "department": "Computer and Information Science",
+    "faculty": "Faculty of Science"
+  },
+  {
+    "type": "programme",
+    "name": "Master of Computer Applications",
+    "level": "PG",
+    "department": "Computer and Information Science",
+    "faculty": "Faculty of Science"
+  },
+  {
+    "type": "programme",
+    "name": "M.Sc. Computer Science",
+    "level": "PG",
+    "department": "Computer and Information Science",
+    "faculty": "Faculty of Science"
+  },
+  {
+    "type": "programme",
+    "name": "M.Sc. Mathematics",
+    "level": "PG",
+    "department": "Mathematics",
+    "faculty": "Faculty of Science"
+  },
+  {
+    "type": "programme",
+    "name": "M.Sc. Physics",
+    "level": "PG",
+    "department": "Physics",
+    "faculty": "Faculty of Science"
+  },
+  {
+    "type": "programme",
+    "name": "M.Sc. Chemistry",
+    "level": "PG",
+    "department": "Chemistry",
+    "faculty": "Faculty of Science"
+  },
+  {
+    "type": "programme",
+    "name": "M.Sc. Botany",
+    "level": "PG",
+    "department": "Botany",
+    "faculty": "Faculty of Science"
+  },
+  {
+    "type": "programme",
+    "name": "M.Sc. Zoology",
+    "level": "PG",
+    "department": "Zoology",
+    "faculty": "Faculty of Science"
+  },
+  {
+    "type": "programme",
+    "name": "M.Sc. Microbiology",
+    "level": "PG",
+    "department": "Microbiology",
+    "faculty": "Faculty of Science"
+  },
+  {
+    "type": "programme",
+    "name": "M.A. English",
+    "level": "PG",
+    "department": "English",
+    "faculty": "Faculty of Arts"
+  },
+  {
+    "type": "programme",
+    "name": "M.A. History",
+    "level": "PG",
+    "department": "History",
+    "faculty": "Faculty of Arts"
+  },
+  {
+    "type": "programme",
+    "name": "M.A. Economics",
+    "level": "PG",
+    "department": "Economics",
+    "faculty": "Faculty of Arts"
+  },
+  {
+    "type": "programme",
+    "name": "M.A. Political Science",
+    "level": "PG",
+    "department": "Political Science and Public Administration",
+    "faculty": "Faculty of Arts"
+  },
+  {
+    "type": "programme",
+    "name": "M.A. Sociology",
+    "level": "PG",
+    "department": "Sociology",
+    "faculty": "Faculty of Arts"
+  },
+  {
+    "type": "programme",
+    "name": "M.Com.",
+    "level": "PG",
+    "department": "Commerce",
+    "faculty": "Faculty of Arts"
+  },
+  {
+    "type": "programme",
+    "name": "M.B.A.",
+    "level": "PG",
+    "department": "Business Administration",
+    "faculty": "Faculty of Arts"
+  },
+  {
+    "type": "programme",
+    "name": "B.Ed.",
+    "level": "UG",
+    "department": "Education",
+    "faculty": "Faculty of Education"
+  },
+  {
+    "type": "programme",
+    "name": "M.Ed.",
+    "level": "PG",
+    "department": "Education",
+    "faculty": "Faculty of Education"
+  },
+  {
+    "type": "programme",
+    "name": "B.P.Ed.",
+    "level": "UG",
+    "department": "Physical Education",
+    "faculty": "Faculty of Education"
+  },
+  {
+    "type": "programme",
+    "name": "B.Sc. Agriculture",
+    "level": "UG",
+    "department": "Agriculture",
+    "faculty": "Faculty of Agriculture"
+  },
+  {
+    "type": "programme",
+    "name": "B.Sc. Horticulture",
+    "level": "UG",
+    "department": "Horticulture",
+    "faculty": "Faculty of Agriculture"
+  },
+  {
+    "type": "programme",
+    "name": "B.F.Sc.",
+    "level": "UG",
+    "department": "Fisheries Science",
+    "faculty": "Faculty of Marine Sciences"
+  },
+  {
+    "type": "programme",
+    "name": "B.Tech. Marine Engineering",
+    "level": "UG",
+    "department": "Marine Engineering",
+    "faculty": "Faculty of Marine Sciences"
+  },
+  {
+    "type": "programme",
+    "name": "B.Tech. Naval Architecture",
+    "level": "UG",
+    "department": "Naval Architecture",
+    "faculty": "Faculty of Marine Sciences"
+  },
+  {
+    "type": "programme",
+    "name": "B.Pharm.",
+    "level": "UG",
+    "department": "Pharmacy",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "programme",
+    "name": "D.Pharm.",
+    "level": "Diploma",
+    "department": "Pharmacy",
+    "faculty": "Faculty of Engineering and Technology"
+  }
+]
