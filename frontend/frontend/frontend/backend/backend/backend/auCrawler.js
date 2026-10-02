@@ -4,7 +4,7 @@ async function fetchPage(url) {
     try {
         const response = await fetch(url, {
             headers: {
-                "User-Agent": "AU-Help-AI/1.0 Student Project"
+                "User-Agent": "AU-Help-AI/1.0"
             }
         });
 
@@ -15,9 +15,8 @@ async function fetchPage(url) {
         return await response.text();
 
     } catch (error) {
-
         console.error(
-            "Crawler error:",
+            "AU fetch error:",
             error.message
         );
 
@@ -25,67 +24,75 @@ async function fetchPage(url) {
     }
 }
 
-
 function cleanText(html) {
-
     return String(html || "")
-        .replace(
-            /<script[\s\S]*?<\/script>/gi,
-            " "
-        )
-        .replace(
-            /<style[\s\S]*?<\/style>/gi,
-            " "
-        )
-        .replace(
-            /<noscript[\s\S]*?<\/noscript>/gi,
-            " "
-        )
-        .replace(
-            /<[^>]+>/g,
-            " "
-        )
-        .replace(
-            /&nbsp;/gi,
-            " "
-        )
-        .replace(
-            /&amp;/gi,
-            "&"
-        )
-        .replace(
-            /&quot;/gi,
-            '"'
-        )
-        .replace(
-            /\s+/g,
-            " "
-        )
+        .replace(/<script[\s\S]*?<\/script>/gi, " ")
+        .replace(/<style[\s\S]*?<\/style>/gi, " ")
+        .replace(/<noscript[\s\S]*?<\/noscript>/gi, " ")
+        .replace(/<[^>]+>/g, " ")
+        .replace(/&nbsp;/gi, " ")
+        .replace(/&amp;/gi, "&")
+        .replace(/&quot;/gi, '"')
+        .replace(/&#39;/gi, "'")
+        .replace(/\s+/g, " ")
         .trim();
 }
 
-
 function absoluteURL(url) {
+    try {
+        if (!url) {
+            return null;
+        }
 
-    if (url.startsWith("http")) {
-        return url;
+        if (url.startsWith("http://") ||
+            url.startsWith("https://")) {
+            return url;
+        }
+
+        if (url.startsWith("//")) {
+            return "https:" + url;
+        }
+
+        if (url.startsWith("/")) {
+            return new URL(
+                url,
+                AU_BASE
+            ).href;
+        }
+
+        return new URL(
+            url,
+            AU_BASE
+        ).href;
+
+    } catch {
+        return null;
     }
-
-    if (url.startsWith("/")) {
-        return "https://www.annamalaiuniversity.ac.in" + url;
-    }
-
-    return new URL(
-        url,
-        AU_BASE
-    ).href;
 }
 
+function isAllowedAUURL(url) {
+    if (!url) {
+        return false;
+    }
+
+    try {
+        const parsed = new URL(url);
+
+        return (
+            parsed.hostname ===
+            "www.annamalaiuniversity.ac.in"
+        ) || (
+            parsed.hostname ===
+            "annamalaiuniversity.ac.in"
+        );
+
+    } catch {
+        return false;
+    }
+}
 
 function extractLinks(html) {
-
     const links = [];
-
     const regex =
         /href\s*=\s*["']([^"']+)["']/gi;
 
@@ -94,14 +101,14 @@ function extractLinks(html) {
     while (
         (match = regex.exec(html)) !== null
     ) {
-
         const url = absoluteURL(
             match[1]
         );
 
         if (
-            url.startsWith(AU_BASE) &&
-            !url.includes("#")
+            isAllowedAUURL(url) &&
+            !url.includes("#") &&
+            !url.toLowerCase().startsWith("javascript:")
         ) {
             links.push(url);
         }
@@ -112,62 +119,114 @@ function extractLinks(html) {
     ];
 }
 
+function isUsefulPage(url) {
+    const lower = url.toLowerCase();
+
+    const keywords = [
+        "department",
+        "faculty",
+        "staff",
+        "course",
+        "programme",
+        "program",
+        "admission",
+        "notice",
+        "notification",
+        "circular",
+        "exam",
+        "coe",
+        "student",
+        "placement",
+        "research",
+        "scholarship"
+    ];
+
+    return keywords.some(
+        keyword => lower.includes(keyword)
+    );
+}
 
 async function crawlAU() {
+    const homepageHTML =
+        await fetchPage(AU_BASE);
 
-    const html = await fetchPage(
-        AU_BASE
-    );
-
-    if (!html) {
-
+    if (!homepageHTML) {
         return {
             verified: false,
+            homepage: "",
             pages: []
         };
-
     }
 
+    const homepageText =
+        cleanText(homepageHTML);
 
-    const links = extractLinks(
-        html
-    );
+    const allLinks =
+        extractLinks(homepageHTML);
+
+    const usefulLinks =
+        allLinks.filter(
+            isUsefulPage
+        );
+
+    const selectedLinks = [
+        ...new Set([
+            ...usefulLinks,
+            ...allLinks
+        ])
+    ].slice(0, 50);
 
     const pages = [];
 
-
     for (
-        const url of links.slice(0, 30)
+        const url of selectedLinks
     ) {
+        try {
+            const html =
+                await fetchPage(url);
 
-        const page = await fetchPage(
-            url
-        );
+            if (!html) {
+                continue;
+            }
 
-        if (page) {
+            const text =
+                cleanText(html);
+
+            if (!text) {
+                continue;
+            }
 
             pages.push({
                 url: url,
-                text: cleanText(page)
-                    .slice(0, 20000)
+                text: text.slice(
+                    0,
+                    20000
+                )
             });
 
+        } catch (error) {
+            console.error(
+                "Page crawl error:",
+                error.message
+            );
         }
     }
 
-
     return {
         verified: true,
-        homepage: cleanText(html)
-            .slice(0, 20000),
+        homepage:
+            homepageText.slice(
+                0,
+                20000
+            ),
         pages: pages
     };
 }
 
-
 module.exports = {
     fetchPage,
     cleanText,
+    absoluteURL,
     extractLinks,
     crawlAU
 };
