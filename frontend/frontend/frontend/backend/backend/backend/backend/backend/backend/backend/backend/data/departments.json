@@ -1,0 +1,187 @@
+[
+  {
+    "type": "department",
+    "name": "English",
+    "faculty": "Faculty of Arts"
+  },
+  {
+    "type": "department",
+    "name": "History",
+    "faculty": "Faculty of Arts"
+  },
+  {
+    "type": "department",
+    "name": "Political Science and Public Administration",
+    "faculty": "Faculty of Arts"
+  },
+  {
+    "type": "department",
+    "name": "Economics",
+    "faculty": "Faculty of Arts"
+  },
+  {
+    "type": "department",
+    "name": "Sociology",
+    "faculty": "Faculty of Arts"
+  },
+  {
+    "type": "department",
+    "name": "Commerce",
+    "faculty": "Faculty of Arts"
+  },
+  {
+    "type": "department",
+    "name": "Population Studies",
+    "faculty": "Faculty of Arts"
+  },
+  {
+    "type": "department",
+    "name": "Business Administration",
+    "faculty": "Faculty of Arts"
+  },
+  {
+    "type": "department",
+    "name": "Library and Information Science",
+    "faculty": "Faculty of Arts"
+  },
+  {
+    "type": "department",
+    "name": "Philosophy",
+    "faculty": "Faculty of Arts"
+  },
+  {
+    "type": "department",
+    "name": "Mathematics",
+    "faculty": "Faculty of Science"
+  },
+  {
+    "type": "department",
+    "name": "Statistics",
+    "faculty": "Faculty of Science"
+  },
+  {
+    "type": "department",
+    "name": "Physics",
+    "faculty": "Faculty of Science"
+  },
+  {
+    "type": "department",
+    "name": "Chemistry",
+    "faculty": "Faculty of Science"
+  },
+  {
+    "type": "department",
+    "name": "Botany",
+    "faculty": "Faculty of Science"
+  },
+  {
+    "type": "department",
+    "name": "Zoology",
+    "faculty": "Faculty of Science"
+  },
+  {
+    "type": "department",
+    "name": "Earth Sciences",
+    "faculty": "Faculty of Science"
+  },
+  {
+    "type": "department",
+    "name": "Biochemistry and Biotechnology",
+    "faculty": "Faculty of Science"
+  },
+  {
+    "type": "department",
+    "name": "Microbiology",
+    "faculty": "Faculty of Science"
+  },
+  {
+    "type": "department",
+    "name": "Computer and Information Science",
+    "faculty": "Faculty of Science"
+  },
+  {
+    "type": "department",
+    "name": "Tamil Studies and Research",
+    "faculty": "Faculty of Indian Languages"
+  },
+  {
+    "type": "department",
+    "name": "Centre of Advanced Study in Linguistics",
+    "faculty": "Faculty of Indian Languages"
+  },
+  {
+    "type": "department",
+    "name": "Hindi",
+    "faculty": "Faculty of Indian Languages"
+  },
+  {
+    "type": "department",
+    "name": "Psychology",
+    "faculty": "Faculty of Education"
+  },
+  {
+    "type": "department",
+    "name": "Lifelong Learning",
+    "faculty": "Faculty of Education"
+  },
+  {
+    "type": "department",
+    "name": "Music",
+    "faculty": "Faculty of Fine Arts"
+  },
+  {
+    "type": "department",
+    "name": "Chemical Engineering",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "department",
+    "name": "Civil Engineering",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "department",
+    "name": "Civil and Structural Engineering",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "department",
+    "name": "Computer Science and Engineering",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "department",
+    "name": "Electrical Engineering",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "department",
+    "name": "Electronics and Communication Engineering",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "department",
+    "name": "Electronics and Instrumentation Engineering",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "department",
+    "name": "Information Technology",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "department",
+    "name": "Mechanical Engineering",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "department",
+    "name": "Manufacturing Engineering",
+    "faculty": "Faculty of Engineering and Technology"
+  },
+  {
+    "type": "department",
+    "name": "Pharmacy",
+    "faculty": "Faculty of Engineering and Technology"
+  }
+]
